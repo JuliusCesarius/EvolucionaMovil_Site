@@ -1,0 +1,209 @@
+@import "library"; // library.less
+
+h1,h2,h3,h4,h5,p,title,li,a,span{		
+		font-family: 'Droid Sans'!important;
+	}
+body{
+	font-family: 'Droid Sans'!important;
+
+	h1{
+		font-size: 2.2em;
+	}
+	h2{
+		font-size: 1.8em;
+		margin: 0 0 15px;
+		color:@blue-medium;
+	}
+	h3{
+		font-size: 1.6em;
+	}
+	p,li{
+		color: @gris-dark;
+	}
+	p{
+		line-height: 1.4em;
+	}
+	i{
+		color:@orange-light;
+	}
+	div.container{
+		.100-pd;
+		overflow: hidden;
+		section{
+			.80-pd;
+			overflow: hidden;
+		}
+	}
+	.tac{
+		text-align: center;
+	}
+	.blue{
+		color:@blue-light
+	}
+	.orange{
+		color:@orange-light;
+	}
+}
+
+header{
+	.100;
+	background:@gris-light;
+	overflow: hidden;
+	div.head{
+		.80-pd20;
+		overflow: hidden;
+		div{
+			float: left;
+			width: 27.5%;
+			line-height:1.6em;
+			&:first-child{
+				width: 25%;
+			}
+			p{
+				color: @blue-light;
+				font-size: 1.5em;
+			}
+			span{
+				color: @gris-dark;
+				margin: 10px 0 0 0;
+				display: block;
+				font-size: .9em;
+			}
+		}
+		div.telefono-m{
+			display:none;
+		}
+		div.phone-affiliate{
+			width: 20%;
+			a{
+				.btn-orange;
+				.borde5x;
+				color: #fff;
+				padding: 10px 2%;
+				display:block;
+				margin: 14px 0 0;
+				text-align:center;
+				width: 96%;
+				font-size: 1.4em;
+				&:hover{
+					background: @orange-light;
+				}
+			}
+		}
+	}
+	nav{
+		.100;
+		background:@gris-medium;
+		overflow: hidden;
+		border-top: 3px solid @blue-light;
+		ul{
+			.80;
+			li{
+				overflow: hidden;
+				width: 19.9%;
+				float: left;
+				border-right: 1px solid #FFFFFF;
+				&:last-child{
+					border: none;
+				}
+				a{
+					color: @text-medium;
+					display:block;
+					padding: 15px 0;
+					text-align: center;
+					&:hover{
+						background: #FFFFFF;
+						color: @blue-light;	
+					}
+				}
+			}
+		}
+	}
+	div.btn-menu{
+		display:none;
+	}
+}
+div.slide{
+	img{
+		width: 100%;
+	}
+}
+
+footer{
+	.100;
+	background: @blue-dark;
+	a,a:link,a:visited{
+		color:white;
+	}
+	a:hover{
+		opacity: .4;
+	}
+	section{
+		.80-f;
+		overflow: hidden;
+		background: @blue-medium;
+		color: #fff;
+		ul{
+			width: 22%;
+			margin: 0 2% 0 0;
+			display: inline-table;
+			&:last-child{
+				margin: 0;
+			}
+			li{
+				color: #fff;
+				font-size: .8em;
+				margin: 0 0 2% 0;
+				opacity: .9;
+				&:first-child{
+					border-bottom: 1px solid #fff;
+					padding: 0 0 2% 0;
+					margin: 0 0 4% 0;
+					opacity: 1;
+					a{
+						color: #fff;
+						padding: 0 0 1% 0;
+						&:hover{
+							opacity: .4;
+						}
+					}
+				}
+			}
+		}
+		blockquote{
+			clear: both;
+			margin: 5% 0 0 0;
+			p{
+				line-height: 1.2em;
+				color: #fff;
+				font-size: .8em;
+			}
+			div.contact{
+				float: left;
+				width: 50%;
+				p{
+					&:first-child{
+						font-size: 1.1em;
+					}
+					&:last-child{
+						font-weight: bold;
+						font-size: 1.1em;
+					}
+				}
+			}
+			div.politicas{
+				p{
+					line-height: 1.3em;
+					&:last-child{
+						font-size:.7em;
+					}
+				}
+				span{
+				}
+			}
+		}
+	}
+	.phone-affiliate{
+		display: none;
+	}
+}

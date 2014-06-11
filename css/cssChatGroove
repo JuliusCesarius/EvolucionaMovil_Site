@@ -1,0 +1,23 @@
+#groove-feedback #groove-button{
+   padding: 0 21px;
+}
+#groove-feedback #groove-button, #groove-feedback #gw-footer {
+background-color: #d23238;
+}
+
+#groove-feedback #groove-button #gw-header-content{
+font-weight:normal;
+font-size: 1.2em;
+}
+#groove-feedback #groove-button #gw-header-content:before {
+    content: "";
+    background: url(http://evolucionamovil.mx/preview/prueba/img/icon-afilicacion.png) no-repeat 2px center;
+width: 30px;
+height: 16px;
+display: block;
+position: absolute;
+margin: 8px 0 0 -22px;
+}
+#groove-feedback #gw-header-content{
+padding-left: 12px;
+}

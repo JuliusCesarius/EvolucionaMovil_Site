@@ -1,0 +1,568 @@
+@import "library"; // library.less
+@import "mediaGeneral"; // media.less
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+	body{
+		div.container{
+			section{
+				.m90;
+			}
+		}	
+		div.principal{
+			section{
+				h1,h2,h3,p, p.subtitle{
+					margin: 0 0 10px 0;
+					text-align: center;
+				}
+				br{
+					display: none;
+				}
+			}
+		}
+		div.recargas{
+			section{
+				background: url('../img/vender-recargas-electronicas.jpg') no-repeat center bottom;
+				background-size: 100%;
+				margin: 0 auto 30px;
+			}
+		}
+		div.ventajas{
+			background: #F3F0E7;
+			section{
+				h2,ul,p{
+					margin-left: 0;
+				}
+				h2{
+					text-align:center;
+				}
+			}
+		}
+		div.proveedores{
+			section{
+				div.linea-proveedores{
+					div{
+						float: none;
+						width: 100%;
+						margin: 0 0 15px 0;
+						&:nth-child(2n+2){	
+							margin: 0 0 15px 0;
+						}
+					}
+				}
+				div.medios-venta{
+					.m100;
+					div{
+						img{
+							height: 70px;
+						}
+					}	
+				}
+			}
+		}
+		div.afiliacion{
+			div.pasos, div.requisitos{
+				.m100;
+				margin-bottom: 30px;
+			}
+			div.pasos{
+				div{
+					background-size: 20px;
+					width: 25%;
+					&:first-child{
+						clear: both;
+						float: none;
+						width: 100%;
+						margin: 0 0 10px 0;
+					}
+					p{
+						font-size: .9em;
+					}
+					figure{
+						width: 100%;
+						height: 65px;
+						img{
+							height: 50px;
+						}
+					}
+				}
+			}
+			div.requisitos{
+				ul{
+					width: 50%;
+					&:first-child{
+						clear: both;
+						float: none;
+						width: 100%;
+						margin: 0 0 10px 0;
+					}
+					li{
+						padding: 0 0 0 17px;
+					}
+				}
+			}
+			blockquote.afiliate, blockquote.chat{
+				.m80;
+			}
+			blockquote.afiliate{
+				margin-bottom: 30px;
+				a{
+					width: 60%;
+				}
+			}
+			blockquote.chat{
+				div{
+					width: 100%;
+					float:none;
+					&:last-child{
+						width: 100%;
+						margin: 3% auto 0;
+					}
+				}
+			}
+		}
+		div.servicios{
+			section{
+				p{
+					margin: 0 0 20px 0;
+				}
+				ul.servicios-icon{
+						margin: 0;
+					li{
+						margin: 1% 1%;
+						width: 30%;
+						&:first-child{
+							margin: 1% 1%;
+						}
+					}
+				}
+				p.otros-mas{
+					font-size: 1.5em;
+					margin: 20px 0;
+				}
+				div.funcionamiento{
+					div.col {
+						float: none;
+						width: 100%;
+						margin: 0;
+						p{
+							margin: 0;
+						}
+					}				
+				}
+
+			}
+		}
+		div.plataforma{
+			div{
+				img{
+					float: none;
+					margin: 0 auto 20px;
+					display: block;
+				}
+			}
+		}
+		div.container{
+			section{
+				div.col{
+					width: 100%;
+					float: none;
+					margin: 0;
+					&:last-child{
+						margin:0;
+					}
+				}
+			}
+		}
+		div.preguntas{
+			section{
+				p.subtitle{
+					span{
+						&:after{
+							margin: -25px 0 0 213px;
+						}
+					}
+				}
+				ul.nav{
+					width: 99%;
+					margin: 0 0 20px 0;
+					li{
+						padding: 3% 6%;
+					}
+				}
+				div.content-nav{
+					h2{
+						text-align: center;
+					}
+				}
+				.csAccordion{
+					p.h3{
+						padding: 0 0 0 7%;
+					}
+				}
+			}
+		}
+		div.pago{
+			section{
+				background: url('../img/pago-de-servicios.jpg') no-repeat center bottom;
+				background-size: 100%;
+				margin: 0 auto 30px;
+			}
+		}
+		div.plataforma-panel{
+			section{
+				background:url('../img/panel-plataforma.jpg') no-repeat center bottom;
+				background-size: 100%;
+				margin: 0 auto;
+			}
+		}
+		div.error{
+			ul{
+				width: 46%;
+				float: left;
+				margin: 0 4% 5% 0;
+			}
+		}
+	}
+}
+@media only screen and (max-width:479px){
+	body{
+		div.recargas{
+			section{
+				padding: 30px 0 350px 0;
+			}
+		}
+		div.pago{
+			section{
+				padding: 30px 0 250px 0;
+			}
+		}
+		div.plataforma-panel{
+			section{
+				padding: 30px 0 250px 0;
+			}
+		}
+	}
+}
+@media only screen and (min-width:480px) and (max-width:639px) {
+	body{
+		div.plataforma-panel{
+			section{
+				padding: 30px 0 300px 0;
+			}
+		}	
+		div.recargas{
+			section{
+				padding: 30px 0 420px 0;
+			}
+		}
+		div.pago{
+			section{
+				padding: 30px 0 310px 0;
+			}
+		}		
+	}
+}
+@media only screen and (min-width:481px) and (max-width:640px){
+	body{
+		div.proveedores{
+			section{
+				div.linea-proveedores{
+					div{
+						margin: 0 0 15px 0;
+					}
+				}
+				div.medios-venta{
+					.m100;
+					div{
+						img{
+							height: 70px;
+						}
+					}	
+				}
+			}
+		}
+		div.afiliacion{
+			div.pasos, div.requisitos{
+				.m100;
+				margin-bottom: 30px;
+			}
+			div.pasos{
+				div{
+					background-size: 20px;
+					width: 25%;
+					&:first-child{
+						clear: both;
+						float: none;
+						width: 100%;
+						margin: 0 0 10px 0;
+					}
+					p{
+						font-size: .9em;
+					}
+					figure{
+						width: 100%;
+						height: 65px;
+						img{
+							height: 50px;
+						}
+					}
+				}
+			}
+			div.requisitos{
+				ul{
+					width: 50%;
+					&:first-child{
+						clear: both;
+						float: none;
+						width: 100%;
+						margin: 0 0 10px 0;
+					}
+					li{
+						padding: 0 0 0 17px;
+					}
+				}
+			}
+			blockquote.afiliate, blockquote.chat{
+				.m80;
+			}
+			blockquote.afiliate{
+				margin-bottom: 30px;
+				a{
+					width: 60%;
+				}
+			}
+			blockquote.chat{
+				div{
+					width: 100%;
+					float:none;
+					&:last-child{
+						width: 100%;
+						margin: 3% auto 0;
+					}
+				}
+			}
+		}
+		div.servicios{
+			section{
+				p{
+					margin: 0 0 20px 0;
+				}
+				ul.servicios-icon{
+						margin: 0;
+					li{
+						margin: 1% 1%;
+						width: 30%;
+						&:first-child{
+							margin: 1% 1%;
+						}
+					}
+				}
+				p.otros-mas{
+					font-size: 1.5em;
+					margin: 20px 0;
+				}
+				div.funcionamiento{
+					div.col {
+						float: none;
+						width: 100%;
+						margin: 0;
+						p{
+							margin: 0;
+						}
+					}				
+				}
+
+			}
+		}
+		div.plataforma{
+			div{
+				img{
+					margin-bottom:20px;
+					display: block;
+				}
+			}
+		}
+		div.container{
+			section{
+				div.col{
+					width: 100%;
+					float: none;
+					margin: 0;
+				}
+			}
+		}
+		div.preguntas{
+			section{
+				p.subtitle{
+					span{
+						&:after{
+							margin: -25px 0 0 123px;
+						}
+					}
+				}
+				ul.nav{
+					width: 99%;
+					margin: 0 0 20px 0;
+					li{
+						padding: 3% 6%;
+					}
+				}
+				div.content-nav{
+					h2{
+						text-align: center;
+					}
+				}
+				.csAccordion{
+					p.h3{
+						padding: 0 0 0 7%;
+					}
+				}
+			}
+		}
+		div.pago{
+			section{
+				background: none;
+				background-size: 100%;
+			}
+		}
+		div.plataforma-panel{
+			section{
+				background:none;
+				background-size: 100%;
+				margin: 0 auto;
+			}
+		}
+	}	
+}
+@media only screen and (min-width:640px) and (max-width:768px){
+	body{
+		div.container{
+			section{
+				.m90;
+			}
+		}	
+		div.principal{
+			section{
+				h1,h2,h3,p, p.subtitle{
+					margin: 0 0 10px 0;
+					text-align: center;
+				}
+				br{
+					display: none;
+				}
+			}
+		}
+		div.recargas{
+			section{
+				background: none;
+				background-size: 100%;
+			}
+		}
+		div.ventajas{
+			background: #F3F0E7;
+			section{
+				h2,ul,p{
+					margin-left: 0;
+				}
+				h2{
+					text-align:center;
+				}
+			}
+		}
+		div.proveedores{
+			section{
+				div.linea-proveedores{
+					div{
+						margin: 0 0 15px 0;
+					}
+				}
+				div.medios-venta{
+					.m100;
+					div{
+						img{
+							height: 70px;
+						}
+					}	
+				}
+			}
+		}
+		div.afiliacion{
+			blockquote.afiliate, blockquote.chat{
+				.m80;
+			}
+			blockquote.afiliate{
+				margin-bottom: 30px;
+				a{
+					width: 60%;
+				}
+			}
+			blockquote.chat{
+				div{
+					width: 100%;
+					float:none;
+					&:last-child{
+						width: 100%;
+						margin: 3% auto 0;
+					}
+				}
+			}
+		}
+		div.servicios{
+			section{
+				p{
+					margin: 0 0 20px 0;
+				}
+				ul.servicios-icon{
+					margin: 0;
+				}
+				p.otros-mas{
+					font-size: 1.5em;
+					margin: 20px 0;
+				}
+			}
+		}
+		div.plataforma{
+			div{
+				img{
+					margin-bottom:20px;
+					display: block;
+				}
+			}
+		}
+		div.container{
+			section{
+				div.col{
+					width: 100%;
+					float: none;
+					margin: 0;
+				}
+			}
+		}
+		div.preguntas{
+			section{
+				p.subtitle{
+					span{
+						padding: 5px 20px;
+						&:after{
+							display:none;
+						}
+					}
+				}
+			
+			}
+		}
+		div.pago{
+			section{
+				background: none;
+				background-size: 100%;
+			}
+		}
+		div.plataforma-panel{
+			section{
+				background:none;
+				background-size: 100%;
+				margin: 0 auto;
+			}
+		}
+	}	
+}

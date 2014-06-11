@@ -1,0 +1,137 @@
+@import "library"; // library.less
+@import "mediaGeneral"; // media.less
+
+@media only screen and (min-width:320px) and (max-width:640px) {
+	div.wrapper{
+		padding: 0 0 40px 0;
+	}
+	div.banner{
+		.inner{
+			width: 80%;
+			margin: 250px 0 0;
+			padding: 40px 10%;
+			vertical-align: bottom;
+			height: 150px;
+		}
+		.dots{
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: -30px auto;
+			width: 66px;
+			bottom: 65px;
+		}
+		ul{
+			li{
+				background-size: cover;
+				background-position-x: 75%;
+			}
+		}
+	}
+	body{
+		div.container{
+			section{
+				width:96%;
+				h2{
+					text-align: center;
+				}
+				article{
+					float: none;
+					width: 96%;
+					border-bottom: 8px solid #fff;
+				}
+			}
+		}
+		div.ventajas{
+			section{
+				ul{
+					float: none;
+					.m80;
+				}
+			}
+		}
+		div.beneficios{
+			section{
+				ul{
+					.m90;
+				}
+				h2{
+					margin: 0 10% 25px;
+				}
+				div#chat{
+					position: absolute;
+					display: none;
+				}
+			}	
+
+		}
+		div#chat{
+			bottom: 0; 
+			width: 100%;
+			right: initial;
+			.border0;
+			p{
+				padding: 8px 12%;
+				&:after{
+					right: 10%;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:641px) and (max-width:768px){
+	body{
+		.banner{
+			ul{
+				li{
+					background-size: cover;
+					background-position-x: 50%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:768px) {
+	div.wrapper{
+		padding: 0 0 40px 0;
+	}
+
+	body{
+		div.container{
+			section{
+				width:96%;
+				h2{
+					text-align: center;
+				}
+				article{
+					border-bottom: 8px solid #fff;
+				}
+			}
+		}
+		div.beneficios{
+			section{
+				ul{
+					width: 50%;
+				}
+				div#chat{
+					position: absolute;
+					display: none;
+				}
+			}	
+
+		}
+		div#chat{
+			bottom: 0; 
+			width: 100%;
+			right: initial;
+			.border0;
+			p{
+				padding: 8px 12%;
+				&:after{
+					right: 10%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,518 @@
+@import "library"; // library.less
+
+div.principal{
+	h1,h2,h3,p{
+		margin-right:45%;
+		text-align: left;
+	}
+	h1{
+		color: @gris-dark;
+		margin-bottom: 10px;
+		margin-top: 30px;
+	}
+	p{
+		margin-bottom: 70px;
+	}
+}
+div{
+	section{
+		h3{
+			color:@orange-light;
+			text-align: center;
+		}
+	}
+}
+div.recargas{
+	section{
+		background: url('../img/vender-recargas-electronicas.jpg') no-repeat right top;
+	}
+}
+div.pago{
+	section{
+		background: url('../img/pago-de-servicios.jpg') no-repeat right center;
+	}	
+}
+div.empresa{
+	section{
+		background: url('../img/header-nosotros.jpg') no-repeat center top;
+		background-size: cover;
+		height: 150px;
+		h1,h2,h3{
+			margin: 1% 0 0 10%;
+			text-align:left;
+		}
+	}	
+}
+div.plataforma-panel{
+	section{
+		background: url('../img/panel-plataforma.jpg') no-repeat right center;
+	}
+}
+div.ventajas{
+	section{
+		h2, ul{
+			margin-left:50%;
+		}
+		h2{
+			margin-bottom: 20px;
+		}
+		p{
+			margin: 0 0 15px 52%;
+			font-size:1.1em;
+		}
+		ul{
+			li{
+				background: url('../img/list-ventajas.png') no-repeat 0 center;
+				padding: 0 0 0 20px;
+				margin: 0 0 20px 0;
+			}
+		}
+	}
+}
+div.ventajas-recargas{
+	background: url('../img/ventajas.jpg') no-repeat;
+	background-size: cover;
+}
+div.pago-servicios{
+	background: url('../img/ventajas-pago-servicios.jpg') no-repeat;
+	background-size: cover;
+}
+div.proveedores, div.afiliacion, div.servicios{
+	h2{
+		text-align: center;
+	}
+}
+div.proveedores{
+	section{
+		div.linea-proveedores{
+			margin: 0 0 20px;
+			overflow: hidden;
+			div{
+				float: left; 
+				width: 32%;
+				&:nth-child(2n+2){
+					margin: 0 1.5%;
+				}				
+				img{
+					width: 100%;
+					margin: 0 0 10px 0;
+				}
+				p{
+					font-size: .8em;
+					line-height: 1.4em;
+					margin: 0 10px;
+				}
+			}
+		}
+		div.medios-venta{
+			width: 80%;
+			margin: 0 auto;
+			h2{
+				margin: 30px 0 10px 0;
+			}
+			p{
+				margin: 0 10px 20px;
+				text-align: center;
+			}
+			div{
+				float: left;
+				width: 31%;
+				&:nth-child(2n+3){
+					margin: 0 1.5%;
+				}
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+				p{
+					text-align: center;
+					margin: 15px 0 0 0;
+				}
+			}
+		}
+	}
+}
+div.afiliacion{
+	background: @gris-light;
+	section{
+		div.pasos, div.requisitos{
+			width: 80%;
+			margin: 0 auto 50px;
+			clear: both;
+			overflow: hidden;
+		}
+		div.pasos{
+			div{
+				width:18%;
+				float: left;
+				background: url(../img/arrow-afiliacion.png) no-repeat right center;
+				&:first-child{
+					width: 26%;
+					background: none;
+					p{
+						text-align: left;
+					}
+				}
+				&:last-child{
+					background: none;
+				}
+				figure{
+					height: 100px;
+					width: 80%;
+					img{
+						display: block;
+						margin: 0 auto;
+					}
+				}
+				p{
+					text-align: center;
+					margin: 0 20% 0 0;
+				}
+			}
+		}
+		div.requisitos{
+			ul{
+				float: left;
+				width: 37%;
+				li{
+					background: url(../img/row-requisitos.png) no-repeat left 2px;
+					padding: 0 0 0 20px;
+					color: @blue-medium;
+					margin: 0 0 5px 0;
+				}
+				&:first-child{
+					width: 26%;
+					li{
+						background: none;
+						padding: 0;
+						color: @gris-dark;
+					}
+				}
+			}
+		}
+		blockquote.afiliate{
+			width: 66%;
+			margin: 0 auto 50px;
+			clear: both;
+			overflow: hidden;
+			background: #fff;
+			.borde5x;
+			.shadow;
+			padding: 2%;
+			a{
+				.btn-orange;
+				.borde5x;
+				color: #fff;
+				padding: 10px 15px;
+				display:block;
+				margin: 14px auto 0;
+				text-align:center;
+				width: 30%;
+				&:hover{
+					background: @orange-light;
+				}
+			}
+		}
+		blockquote.chat{
+			width: 70%;
+			margin: 0 auto 0;
+			clear: both;
+			overflow: hidden;
+			div{
+				float: left;
+				width: 60%;
+				&:first-child{
+					p{
+						text-align: justify;
+					}
+				}
+				&:last-child{
+					width: 37%;
+					margin: 0 0 0 3%;
+					span{
+						width: 60%;
+						margin: 0 auto;
+						display: block;
+						text-align: center;
+						.btn-red;
+						padding: 10px 15px;
+						.borde5x-bottom;
+						cursor: pointer;
+						a{
+							color: #fff;
+							padding: 5px 15px;
+						}
+						&:hover{
+							background:#b61f24;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+div.servicios{
+	ul.servicios-icon{
+		margin: 20px 0 0 0;
+		clear: both;
+		overflow: hidden;
+		li{
+			float: left;
+			width: 14.7%;
+			margin: 0 1%;
+			border: rgb(199, 208, 221) 1px solid;
+			.borde5x;
+			overflow: hidden;
+			img{
+				width: 100%;
+			}
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	p.otros-mas{
+		color: @orange-light;
+		text-align: center;
+		margin: 20px 0 10px;
+		font-size: 2em; 
+	}
+	div.funcionamiento{
+		clear: both;
+		overflow: hidden;
+		margin: 25px 0 20px;
+		div.col{
+			float: left;
+			width: 49%;
+			&:first-child{
+				margin: 0 2% 0 0;
+			}
+			div.number{
+				margin: 0 0 10px 0;
+				clear: both;
+				overflow: hidden;
+				span{
+					background: @gris-medium;
+					color: @gris-dark;
+					width: 30px;
+					padding: 10px;
+					.borde5x;
+					font-size: 2.4em;
+					text-align: center;
+					float: left;
+					margin: 0 10px 0 0;
+				}
+				p{
+
+				}
+			}
+		}
+	}
+	blockquote.explicacion{
+		background: @gris-light;
+		width: 92%;
+		padding: 2% 4%;
+		margin: 0 auto 40px;
+		p{
+			&:first-child{
+				margin: 0 0 10px 0;
+			}
+			font-size: .9em;
+		}
+	}
+}
+div.plataforma{
+	div{
+		clear: both;
+		overflow: hidden;
+		margin: 0 0 20px 0;
+		img{
+			float: left;
+			margin: 0 20px 0 0;
+		}
+	}
+	img.log-in{
+		margin: 30px auto;
+		display: block;
+	}
+}
+div.content-aviso, div.content-politicas{
+	h1{
+		color: #647070;
+	}
+	p{
+		margin: 1.4em auto;
+	}
+	ul,ol{
+		display: block;		
+		line-height: 1.5em;
+		-webkit-margin-before: 1em;
+		-webkit-margin-after: 1em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		-webkit-padding-start: 40px;
+	}
+	ol{
+		list-style-type: decimal;
+	}
+	ul{		
+		list-style-type: disc;
+	}
+	ol.abc{
+		list-style-type: lower-alpha;
+	}
+	li{
+		margin: 1.1em;
+	}
+}
+div.content-empresa, div.sitemap{
+	h1{
+		color: @gris-dark;
+	}
+	div.col{
+		float: left;
+		width: 40%;
+		margin: 0 5%;
+		&:last-child{
+			margin:0 5%;
+		}
+		h4, h2{
+			color: @blue-light;
+			font-size: 1.3em;
+			margin: 25px 0 5px 0;
+		}
+		h2{
+			a{
+			color: @blue-light;
+			font-size: 1.3em;
+			margin: 25px 0 5px 0;
+				&:hover{
+					color: @blue-dark;
+				}
+			}
+		}
+		ul{
+			margin: 20px 0 0 ;
+			li{
+				margin: 0 0 10px 15px;
+			}
+		}
+	}
+}
+div.error{
+	section{
+		blockquote{
+			width: 80%;
+			margin: 60px auto;
+			img{
+				float: left;
+				margin: 0 6% 0 0;
+			}
+			p.title{
+				color: @gris-dark;
+				font-size: 3em;
+			}
+			p.subtitle{
+				color:@blue-medium;
+				font-size: 2em;
+			}
+		}
+		p.lost{
+			color: @orange-light;
+			font-size: 1.7em;
+		}
+		p.sublost{
+			font-size: 1.5em;
+			margin: 0 0 2% 0;
+		}
+		ul{
+			width: 22%;
+			float: left;
+			margin: 0 4% 0 0;
+			li{
+				&:first-child{
+					margin: 0 0 5% 0;
+					font-size: 1em;
+					a{
+						color:@blue-medium;
+							&:hover{
+							color: @blue-dark;
+						}
+					}	
+				}
+				margin: 0 0 2%;
+				font-size: .9em;
+			}
+			li.title{
+				color:@blue-medium;
+				margin: 5% 0;
+				font-size: 1em;
+			}
+			&:last-child{
+				margin: 0;
+			}
+		}
+	}
+}
+div.preguntas{
+	p.subtitle{
+		margin: 1% 15% 3% 0;
+		font-size: 1.6em;
+		span{
+			.btn-red;
+			margin: -12px 0 0 0;
+			width: 246px;
+			.borde5x-bottom;
+			color: #fff;
+			padding: 5px 15px 5px 34px;
+			font-size: .8em;
+			cursor: pointer;
+			&:after{
+				content:"";					
+				background: url(../img/icon-afilicacion.png) no-repeat 2px center;
+				width: 30px;
+				height: 16px;
+				display: block;
+				position: absolute;
+				margin: -25px 0 0 149px;
+			}
+			&:hover{
+				background: #b61f24;
+			}
+		}
+	}
+	ul.nav, div.content-nav{
+		display: inline-table;
+	}
+	ul.nav{
+		width: 23%;
+		border: 1px solid @gris-medium1;
+		margin: 0 2% 0 0;
+		.borde5x;
+		li{
+			padding: 4% 6%;
+			border-bottom: 1px solid @gris-medium1;
+			cursor: pointer;
+			&:first-child{
+				color: @blue-light;
+				background: @gris-medium;
+				font-size: 1.2em;
+			}
+			&:last-child{
+				border-bottom: 0;
+			}
+			&:hover{
+				background: @gris-medium;
+			}
+		}
+	}
+	div.content-nav{
+		width: 74%;
+	}
+}
+#img-chat{
+	cursor: pointer;
+}

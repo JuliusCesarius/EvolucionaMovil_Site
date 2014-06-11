@@ -1,0 +1,151 @@
+@media only screen and (min-width:320px) and (max-width:768px) {
+	nav#menu{
+		ul{
+			li{
+				a{
+					font-size: 1.2em;
+				}
+			}
+			li.afiliar{
+				border-top: 1px solid @gris-dark;
+				border-bottom: 1px solid @gris-dark;
+				a{
+					color: @orange-light;
+				}
+			}
+			li.call{
+				padding: 10px 10px 4px 20px;
+				color:#fff;
+				font-size: 1.2em;
+			}
+			li.phone{
+				padding: 0 10px 10px 20px;
+				color: @blue-medium;
+				font-size: 1.7em;
+				font-weight: bold;
+			}
+		}
+	}
+	header{
+		div.head{
+			.m100pd;
+			div{
+				float:none;
+			}
+			div.logo{
+				.m90;
+			}
+			div.telefono{
+				display:none;
+			}
+			div.telefono-m{
+				.m90pd;
+				border-top: 3px solid @blue-light;
+				background: @gris-medium;
+				text-align: center;
+				display:block;
+				p{
+					font-size: 1.1em;
+					font-weight: bold;
+					span{
+						color: @gris-dark;
+						display: initial;
+					}
+				}
+			}
+			div.phone-affiliate{
+				width: 100%;
+				margin: 0;
+				float: none;
+				clear: both;
+				line-height: initial;
+				a{
+					margin: 0;
+					font-size: 1.1em;
+					.borde0x;
+				}
+			}
+		}
+		nav{
+			display:none;
+		}
+		div.btn-menu{
+			background: @blue-medium;
+			position: fixed;
+			right: 0;
+			top: 0;
+			display:block;
+			z-index: 2;
+			a{
+				padding: 13px 15px;		
+				display: block;	
+			}
+		}
+	}
+	footer{
+	    background: @blue-medium;
+		section{
+			.m90;
+			padding: 20px 0;
+			ul{
+				display: none;
+			}
+			blockquote{
+				margin: 0;
+				div.contact{
+					float: none;
+					width: 100%;
+					p.text-ft{
+						display: none;
+					}
+					p{
+						font-weight: bold;
+						text-align: center;
+						&:first-child{
+							font-size: 1.8em;
+							margin: 0 0 10px 0;
+						}
+						span{
+							display: none;
+						}
+					}
+				}
+				div.politicas{
+					text-align: center;
+					p{
+						&:first-child{
+							font-size: 1.1em;
+							margin: 0 0 5px 0;
+						}
+						&:last-child{
+							font-size: .9em;
+						}
+					}
+				}
+			}
+		}
+		.phone-affiliate{
+			display: block;
+		}
+	}
+	div.phone-affiliate{
+		width: 100%;
+		margin: 0;
+		float: none;
+		clear: both;
+		line-height: initial;
+		a{
+			.btn-orange;
+			color: #fff;
+			padding: 10px 2%;
+			display:block;
+			text-align:center;
+			width: 96%;
+			font-size: 1.4em;
+			font-size: 1.1em;
+			&:hover{
+				background: @orange-light;
+			}
+		}
+	}
+}
