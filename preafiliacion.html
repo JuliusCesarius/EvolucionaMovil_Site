@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"/> 
-	<title>Evoluciona Móvil</title>
-	<meta name="description" content="Distribuidor de recargas electrónicas multiregión y pago de servicios. Comienza un negocio o incrementa los servicios que ofreces desde cualquier parte del país."/>
-	<meta name="keywords" content="vender recargas electrónicas, recargas electrónicas, recargas electrónicas multiregión, recarga de tiempo aire, Pago de servicios, pago de servicios en línea"/>
+<meta charset="utf-8"/> 
+	<title>Plataforma Evoluciona Móvil | Evoluciona Móvil</title>
+	<meta name="description" content="Permite realizar reporte de depósitos a los cuentas de Recargas Electrónicas y Pago de Servicios las 24 horas del día y llevar el seguimiento de los movimientos realizados."/>
+	<meta name="keywords" content="plataforma, panel de control, recargas electrónicas, pago de servicios"/>
 	<meta name="sitedomain" content="www.evolucionamovil.mx"/>
 	<meta name="country" content="Mexico" />
 	<meta name="language" content="Spanish" />
@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/page.css" type="text/css" />
 	<link rel="stylesheet" href="css/mediaPage.css" type="text/css" />
 	<link rel="stylesheet" href="css/slider.css" type="text/css" />
+	<link rel="stylesheet" href="css/preafiliacion.css" type="text/css" />
 	<link rel="stylesheet" href="css/jquery.mmenu.positioning.css" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
@@ -56,7 +57,6 @@
 			<li><a href="plataforma.html">Panel de Control</a></li>
 			<li><a href="empresa.html">Empresa</a></li>
 			<li><a href="dudas-ayuda.html">Dudas / Ayuda</a></li>
-			<li class="afiliar"><a href="http://evolucionamovil.mx/preafiliacion.html">Quiero Afiliarme</a></li>
 			<li class="call">Llamar DF y Edo Mex</li>
 			<li class="phone">5715 0880</li>
 			<li class="call">Llamar Interior Rep</li>
@@ -79,9 +79,6 @@
 				</div>
 				<div class="telefono-m">
 					<p>01 (55) 57 15 0880 <span>ó</span> 01 (800) 84 14 591</p>
-				</div>	
-				<div class="phone-affiliate">
-					<a href="http://evolucionamovil.mx/preafiliacion.html">Quiero afiliarme</a>
 				</div>
 			</div>
 			<nav>
@@ -97,51 +94,89 @@
 				<a href="#menu" data-ajax="false"><img alt="Servicios" title="Servicios" src="img/recargas-electronicas-menu.png"></a>
 			</div>
 		</header>
-		<div class="container error">
-			<section>
-				<blockquote>
-					<img alt="¿Estas perdido?" title="¿Estas perdido?" src="img/recarga-de-tiempo-aire.png">
-					<p class="title">404 Página no encontrada</p>
-					<p class="subtitle">La página que estas buscando no existe</p>
+		<div class="container principal preafiliacion">
+			<div class="header">
+				<div class="logo"></div>
+				venta de recargas electrónicas
+				<span>TODAS LAS COMPAÑÍAS</span>
+			</div>
+			<form id="" name="preafiliacionForm" action="mail.php" method="post">
+				<fieldset>
+					<legend>
+						Preafíliate! <small>es rápido y sencillo!</small>
+					</legend>
+					<div class="field">
+						<label for="businessName">Nombre del negocio</label>
+						<input id="businessName" name="businessName" placeholder="Negocio" required="required" type="text" AUTOCOMPLETE=OFF />
+					
+					</div>
+					<div class="field">
+						<label for="contactName">Nombre del contacto</label>
+						<input id="contactName" name="contactName" placeholder="Contacto" required="required" type="text" AUTOCOMPLETE=OFF />
+					</div>
+					<div class="field">
+						<label for="email">Email</label>
+						<input id="email" name="email" placeholder="Email" required="required" type="email" AUTOCOMPLETE=OFF />
+					</div>
+					<div class="field adress">
+						<label for="calle">Dirección</label>
+						<input id="calle" name="calle" placeholder="Calle" type="text" required="required" AUTOCOMPLETE=OFF />
+						<input id="numero" name="numero" placeholder="Num. Ext" type="text" required="required" AUTOCOMPLETE=OFF />
+						<input id="exterior" name="interior" placeholder="Num. Int" type="text" AUTOCOMPLETE=OFF />
+						<input id="colonia" name="colonia" placeholder="Colonia" type="text" required="required" AUTOCOMPLETE=OFF />
+						<input id="ciudad" name="ciudad" placeholder="Ciudad" type="text" required="required" AUTOCOMPLETE=OFF />
+						<input id="estado" name="estado" placeholder="Estado" type="text" required="required" AUTOCOMPLETE=OFF />
+						<input id="cp" name="cp" placeholder="C.P." type="text" required="required" AUTOCOMPLETE=OFF />
+					</div>
+					<div class="field">
+						<label for="phone">Teléfono</label>
+						<input id="phone" name="phone" placeholder="Teléfono fijo" required="required" AUTOCOMPLETE=OFF />
+					</div>
+					<div class="field">
+						<label for="mobile">Celular</label>
+						<input id="mobile" name="mobile" placeholder="Teléfono celular" required="required" AUTOCOMPLETE=OFF />
+					</div>
+					<div class="field">
+						<label for="portal">Portal</label>
+						<select id="portal" name="portal" placeholder="Selecciona un portal" required="required">
+							<option value="-1">Selecciona un portal</option>
+							<option value="1">Portal 1</option>
+							<option value="2">Portal 2</option>
+							<option value="3">Portal 3</option>
+							<option value="4">Portal 4</option>
+							<option value="5">Portal 5</option>
+						</select>
+					</div>
+					<div class="field">
+						<label for="pagoServicios">¿Te interesa el pago de servicios?</label>
+						<label for="yes" class="radio">
+							<input type="radio" id="yes" value="si" name="pagoServicios" checked="checked" />
+							<label for="yes">Sí</label>
+						</label>
+						<label for="no" class="radio">
+							<input type="radio" id="no" value="si" name="pagoServicios"/>
+							<label for="no">No</label>
+						</label>
+					</div>
+					<div class="field">
+						<label for="terminosYCondiciones">
+							<input type="checkbox" id="yes" name="terminosYCondiciones"/>He leído y acepto el <a href="aviso-de-privacidad.html">Aviso de privacidad</a> y las <a href="politicas-de-uso.html">políticas de uso</a></label>
+					</div>
+					<div class="field center">
+						<input class="submit" type="submit" value="Enviar solicitud"/>
+					</div>
+				</fieldset>
+			</form>
+
+				<blockquote class="chat">
+					<p>Si no sabes <i>cómo vender recargas electrónicas</i> y quieres saber más acerca del proceso de afiliación y así poder <i>vender tiempo aire</i> (TAE) desde tu negocio, o simplemente quieres saber como funciona la <i>vender recargas electrónicas</i>, solicita ayuda en línea y con gusto te atenderá uno de nuestros ejecutivos.</p>
+					<div onclick="GrooveWidget.toggle(); return false;">
+						<img alt="Recargas electronicas" title="Recargas electronicas" id="img-chat"src="img/recargas-electronicas-ayuda.jpg">
+						<p>Contacto directo</p>
+					</div>
 				</blockquote>
-				<p class="lost">¿Estás perdido?</p>
-				<p class="sublost">¿Por qué no intentas alguno de estos links?</p>
-				<ul>
-					<li><a href="vender-recargas-electronicas-multiregion.html">Recargas Electrónicas</a></li>
-					<li>7% de Comisión</li>
-					<li>Ventajas</li>
-					<li>Proveedores</li>
-					<li>Medios de venta</li>
-					<li>Afiliación</li>
-				</ul>
-				<ul>
-					<li><a href="pago-de-servicios.html">Pago de servicios</a></li>
-					<li>MÁS de 100 Servicios</li>
-					<li>Ventajas</li>
-					<li>Servicios</li>
-					<li>¿Cómo funciona?</li>
-					<li>Prepago y Pospago</li>
-					<li>Afiliación</li>
-				</ul>
-				<ul>
-					<li><a href="plataforma.html">Plataforma</a></li>
-					<li>Reporte de Recargas Electrónicas<li>
-					<li>Reporte de Pago de Servicios<li>
-					<li>Consulta de historial<li>
-					<li>Compra de paquetes<li>
-					<li>Demo</li>
-				</ul>
-				<ul>
-					<li><a href="empresa.html">Empresa</a></li>
-					<li>¿Quiénes somos?</li>
-					<li>Ventajas de trabajar con nosotros</li>
-					<li>Contacto</li>
-					<li class="title">Dudas / Ayuda</li>
-					<li>Contacto</li>
-					<li>FAQ</li>
-				</ul>
-			</section>
 		</div>
+
 		<footer>
 			<div class="phone-affiliate">
 				<a href="http://evolucionamovil.mx/preafiliacion.html">Quiero afiliarme</a>
